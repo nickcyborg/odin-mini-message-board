@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Mini Message Board</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Mini Message Board</h1>
+        <div style="margin: 0 auto; width: 100px;">
+            <a href="/new" > New Post</a>
+        </div>
+        <div>
+            <% for (let i = 0; i < messages.length; i++) { %>
+                <div class="message">
+                    <p>User: <%= messages[i].user %></p>
+                    <p>Message: <%= messages[i].text %></p>
+                    <p>Date: <%= messages[i].added %></p>
+                    <a href=/messages/<%= messages[i].id %>>Full Message</a>
+                </div>  
+                <hr>    
+            <% } %>
+        </div>
+    </body>
+</html>
