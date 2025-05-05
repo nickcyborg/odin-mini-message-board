@@ -8,7 +8,7 @@
     <div class="message">
         <p><strong>User:</strong> <%= message.user %></p>
         <p><strong>Message:</strong> <%= message.text %></p>
-        <p><strong>Date:</strong> <%= message.added %></p>
+        <p><strong>Date:</strong> <%= message.added.toLocaleDateString() %></p>
     </div>  
     <a href="/">Home</a>
 </body>
