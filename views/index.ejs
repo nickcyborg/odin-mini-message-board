@@ -11,9 +11,9 @@
         <div>
             <% for (let i = 0; i < messages.length; i++) { %>
                 <div class="message">
-                    <p>User: <%= messages[i].user %></p>
-                    <p>Message: <%= messages[i].text %></p>
-                    <p>Date: <%= messages[i].added %></p>
+                    <p><strong>User:</strong> <%= messages[i].user %></p>
+                    <p><strong>Message:</strong> <%= messages[i].text %></p>
+                    <p><strong>Date:</strong> <%= messages[i].added.toLocaleDateString() %></p>
                     <a href=/messages/<%= messages[i].id %>>Full Message</a>
                 </div>  
                 <hr>    

@@ -11,7 +11,7 @@ newRouter.post('/', (req, res) => {
     messages.unshift({
         text: text, 
         user: user, 
-        added: new Date().toLocaleDateString(),
+        added: new Date(),
         id: messages.length
     })  
     res.redirect("/")
